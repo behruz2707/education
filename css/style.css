@@ -1,0 +1,134 @@
+@import"./bootstrap.min.css";
+@import'./animate.css';
+
+body{
+    overflow-x: hidden;
+}
+.has-bg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Slider CSS*/
+.carousel-item{
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 1;
+    border: 2px solid #fff;
+}
+.carousel-indicators .active{
+    background-color: #198754;
+    border-color: #198754;
+}
+
+/*feature section*/
+
+/*
+.feature-img{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    
+    margin-bottom: 15px;
+}
+*/
+.feature-img{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-width: 80px;
+    min-height: 80px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.feature-img img{
+    display: block;
+    max-width: 50%;
+}
+.teacher-img{
+    height: 60px;
+    width: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.program-item{
+    background-size: cover;
+}
+.program-color{
+    background-color: rgba(7, 189, 119,  0.78);
+}
+.input-item{
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+/*teacher section*/
+
+.client-image{
+    height: 100px !important;
+    width: 100px !important;
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.client-image::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.client-image.active::before{
+    background-color: transparent;
+}
+.client-button button{
+    box-shadow: none !important;
+    outline: none !important;
+}
+.blog-image{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form textarea{
+    resize: none;
+}
+.contact-icon{
+    min-height: 45px;
+}
+@media (max-width:991px){
+    .form-title{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
